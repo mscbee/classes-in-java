@@ -14,14 +14,17 @@ public class MovieList {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Please enter the name of the movie, its rating (A-D), the year of release, and the runtime in minutes");
-
-        movieName = in.next();
+        System.out.println("Please enter the name of the movie: ");
+        movieName = in.nextLine(); //.next() only read the input up to the space whereas .nextLine() reads until the end of the line
+        System.out.println("Please enter the movie rating (A-D): ");
         rating = in.next().charAt(0);
+        System.out.println("Please enter the year of release: ");
         year = in.nextInt();
+        System.out.println("Please enter the runtime in minutes: ");
         runtime = in.nextInt();
 
-        //defining objects / class instances
+
+        //defining objects / class instances /instantiating a class object
         Movie newMovie = new Movie(movieName, rating, year, runtime);
 
         System.out.println(newMovie.toString());
