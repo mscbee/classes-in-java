@@ -57,7 +57,7 @@ public class Movie {
         return " Movie: " + movieName +
                 "\n Rating: " + rating +
                 "\n Year: " + year +
-                "\n Runtime: " + runtime + " mins";
+                "\n Runtime: " + runtime + " mins\n";
     }
 
 
